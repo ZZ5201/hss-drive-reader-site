@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HSS Drive Reader — 隐私政策与服务条款</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+       max-width:760px;margin:0 auto;padding:40px 22px;line-height:1.75;color:#1f2328;background:#fff}
+  h1{font-size:24px;margin:0 0 6px}
+  .sub{color:#656d76;font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:32px 0 8px;padding-bottom:6px;border-bottom:1px solid #d8dee4}
+  h3{font-size:15px;margin:18px 0 4px}
+  p,li{font-size:15px}
+  ul{padding-left:22px}
+  .box{background:#f6f8fa;border:1px solid #d8dee4;border-radius:8px;padding:16px 18px;margin:18px 0}
+  code{background:#f6f8fa;padding:1px 5px;border-radius:4px;font-size:13px}
+  .sig{margin-top:40px;padding-top:18px;border-top:1px solid #d8dee4;font-size:14px;color:#656d76}
+</style>
+</head>
+<body>
+
+<h1>HSS Drive Reader</h1>
+<div class="sub">Google OAuth 应用（发布状态：In production / 未验证） · 项目 <code>hermes</code></div>
+
+<div class="box">
+  <strong>一句话摘要</strong>：本应用是一个个人自用的科研知识库工具，只在授权用户本人的 Google 账户下读写其本人 Google Drive 中的文件。
+  它不收集任何第三方数据，不向任何第三方服务传输数据，所有操作均由应用所有者在自己的设备上发起。
+</div>
+
+<h2>1. 应用的用途</h2>
+<p>HSS Drive Reader 用于维护「HSS 研究操作系统」的知识库：</p>
+<ul>
+  <li>按 SHA-256 校验文献卡与其 PDF 原文是否一致；</li>
+  <li>按页码定位文献卡中的引文，产出可追溯的核验报告；</li>
+  <li>在知识库目录中检索、读取、上传和整理研究附件。</li>
+</ul>
+
+<h2>2. 申请的权限</h2>
+<p>应用申请 OAuth scope <code>https://www.googleapis.com/auth/drive</code>，即对授权用户本人 Drive 的完整读写权限。
+  之所以需要写权限，是因为文献卡与 PDF 的校验结果需要回写到知识库目录中。</p>
+<p>授权范围<strong>仅限于授权账号自身的云端硬盘</strong>。应用不访问任何共享云端硬盘（shared drive），
+  不访问任何由他人共享给该账号的文件，也不访问任何其他用户的任何数据。</p>
+
+<h2>3. 隐私政策</h2>
+<h3>3.1 收集的数据</h3>
+<p>本应用<strong>不收集</strong>任何用户数据：不收集个人资料、不收集使用统计、不收集设备标识符、不使用广告或分析 SDK。</p>
+
+<h3>3.2 数据的处理位置</h3>
+<p>所有读取到的文件内容与核验结果，仅在被授权的私有计算环境中处理，用于生成核验报告。
+  这些内容<strong>不会</strong>被发送到 Google 之外的任何服务器，<strong>不会</strong>被用于模型训练，
+  <strong>不会</strong>被分享给任何第三方。</p>
+
+<h3>3.3 文件的可见性</h3>
+<p>经由本应用在知识库中新建的文件（如核验报告），仅对授权账号可见。
+  本应用不会将任何文件设为「任何人可读」，也不会变更任何既有文件的共享设置，除非操作者在明确指示下另行要求。</p>
+
+<h3>3.4 删除</h3>
+<p>应用产生的文件可由操作者随时删除；应用对文件的删除操作默认进入 Google Drive 回收站（可恢复），
+  永久删除需要额外明确指定。本应用不会在未获明确指示的情况下删除任何文件。</p>
+
+<h3>3.5 撤销授权</h3>
+<p>随时可在 Google 账户的「第三方应用和服务的连接」中移除本应用；
+  移除后，本应用持有的刷新令牌立即失效，无法再访问任何文件。</p>
+
+<h2>4. 服务条款</h2>
+<h3>4.1 使用范围</h3>
+<p>本应用为单用户自用工具，由应用所有者在其本人账户下运行。不得将本应用用于访问任何不属于授权账号的数据，
+  不得用于违反 Google 服务条款或适用法律法规的任何用途。</p>
+
+<h3>4.2 责任限制</h3>
+<p>本应用按「现状」提供，不对因文件读取、校验或写入失败造成的数据损失承担责任。
+  建议对知识库中的关键文件保留独立备份。</p>
+
+<h3>4.3 变更</h3>
+<p>本页面内容可能随应用功能变化而更新。</p>
+
+<h2>5. 联系方式</h2>
+<p>应用所有者：<code>yuqizhu69@gmail.com</code></p>
+
+<div class="sig">
+  本页面为应用所有者为满足 Google OAuth 应用「品牌配置」要求而提供的公开说明文档；
+  它描述的应用即上述 OAuth 客户端本身。
+</div>
+
+</body>
+</html>
